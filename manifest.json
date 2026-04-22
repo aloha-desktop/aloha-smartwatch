@@ -1,0 +1,32 @@
+{
+  "manifestVersion": 1,
+  "name": "Smartwatch",
+  "version": "1.0.0",
+  "description": "Allows Aloha to check current time",
+  "author": "Aloha Desktop",
+  "icon": "dist/icon.svg",
+  "main": "dist/index.esm.js",
+  "tools": [
+    {
+      "name": "currentTime",
+      "displayName": "Current Time",
+      "description": "The assistant can tell the current time",
+      "parameters": {
+        "type": "object",
+        "required": [
+          "format"
+        ],
+        "properties": {
+          "format": {
+            "type": "string",
+            "description": "The format of the time to tell",
+            "enum": [
+              "iso",
+              "long"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
