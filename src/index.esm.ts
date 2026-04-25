@@ -1,6 +1,6 @@
 import { Plugin, PluginContext } from 'aloha-sdk'
 
-export default class AlohaSamplePlugin extends Plugin {
+export default class AlohaSmartwatchPlugin extends Plugin {
   constructor(context: PluginContext) {
     super(context)
   }
